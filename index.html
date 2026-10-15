@@ -71,7 +71,10 @@ h1{margin:0 0 .35rem;font-size:22px;font-weight:bold;color:#000;line-height:1.3}
 .notice-body p{margin:0;color:var(--fg2);overflow-wrap:break-word}
 .notice-body .date{margin-right:.4rem;color:var(--muted);font-family:"Courier New",Consolas,monospace}
 /* 简介 */
-.about p{margin:0;font-size:13px;color:var(--fg2)}
+.about p{margin:0 0 .4rem;font-size:13px;color:var(--fg2)}
+.about p:last-child{margin-bottom:0}
+.about a{color:var(--link);text-decoration:underline}
+.about a:hover{color:var(--link-h)}
 /* 区块 */
 section{margin:0 0 1.5rem}
 h2{
@@ -159,6 +162,7 @@ footer a:hover{color:var(--link-h)}
   <section class="about">
     <h2 data-i18n="about_h">简介</h2>
     <p data-i18n="about_p1">本站提供工作室自制程序与部分搬运软件的下载，代码开源。</p>
+    <p><span data-i18n="repo_label">网站仓库：</span><a href="https://github.com/hduka/download" target="_blank" rel="noopener noreferrer">github.com/hduka/download</a></p>
   </section>
 
   <section>
@@ -252,8 +256,8 @@ footer a:hover{color:var(--link-h)}
 
 <script>
 var I18N = {
-"zh-CN":{pageTitle:"文件下载 | hdcfl studio",dl_h1:"文件下载",dl_lead:"hdcfl studio 开发",notice_tag:"公告",notice_1:"StarOS 最新版本为 v1.7.2。",about_h:"简介",about_p1:"本站提供工作室自制程序与部分搬运软件的下载，代码开源。",h_studio:"工作室文件",h_other:"其他文件（搬运）",i_cmd:"C++ CMD（全版本）",i_dos:"C++ MS-DOS（全版本）",i_staros:"C++ StarOS（全版本）",i_maze:"C++ 迷宫游戏",i_360:"360 急救箱",s_pwd:"提取密码：",m_cloud:"蓝奏云 ↗",h_tips:"下载说明",t1:"所有文件均托管在蓝奏云，点击条目即可跳转。",t2:"带提取密码的文件，密码已标注在条目下方，复制后在蓝奏云页面粘贴即可。",t3:"如遇链接失效，请通过邮箱反馈，会尽快补档。",original_site:"原网站"},
-"en":{pageTitle:"Downloads | hdcfl studio",dl_h1:"Downloads",dl_lead:"Developed by hdcfl studio",notice_tag:"Notice",notice_1:"The latest version of StarOS is v1.7.2.",about_h:"About",about_p1:"This page offers our own programs and some mirrored software. The source code is open.",h_studio:"Studio Files",h_other:"Other Files (Mirrored)",i_cmd:"C++ CMD (All Versions)",i_dos:"C++ MS-DOS (All Versions)",i_staros:"C++ StarOS (All Versions)",i_maze:"C++ Maze Game",i_360:"360 Rescue Box",s_pwd:"Extraction code:",m_cloud:"Lanzou ↗",h_tips:"Notes",t1:"All files are hosted on Lanzou Cloud; click an entry to open it.",t2:"For files with an extraction code, the code is shown below the entry — copy it and paste it on the Lanzou page.",t3:"If a link is broken, please let us know by email and we'll re-upload it soon.",original_site:"Original Site"}
+"zh-CN":{pageTitle:"文件下载 | hdcfl studio",dl_h1:"文件下载",dl_lead:"hdcfl studio 开发",notice_tag:"公告",notice_1:"StarOS 最新版本为 v1.7.2。",about_h:"简介",about_p1:"本站提供工作室自制程序与部分搬运软件的下载，代码开源。",repo_label:"网站仓库：",h_studio:"工作室文件",h_other:"其他文件（搬运）",i_cmd:"C++ CMD（全版本）",i_dos:"C++ MS-DOS（全版本）",i_staros:"C++ StarOS（全版本）",i_maze:"C++ 迷宫游戏",i_360:"360 急救箱",s_pwd:"提取密码：",m_cloud:"蓝奏云 ↗",h_tips:"下载说明",t1:"所有文件均托管在蓝奏云，点击条目即可跳转。",t2:"带提取密码的文件，密码已标注在条目下方，复制后在蓝奏云页面粘贴即可。",t3:"如遇链接失效，请通过邮箱反馈，会尽快补档。",original_site:"原网站"},
+"en":{pageTitle:"Downloads | hdcfl studio",dl_h1:"Downloads",dl_lead:"Developed by hdcfl studio",notice_tag:"Notice",notice_1:"The latest version of StarOS is v1.7.2.",about_h:"About",about_p1:"This page offers our own programs and some mirrored software. The source code is open.",repo_label:"Repository:",h_studio:"Studio Files",h_other:"Other Files (Mirrored)",i_cmd:"C++ CMD (All Versions)",i_dos:"C++ MS-DOS (All Versions)",i_staros:"C++ StarOS (All Versions)",i_maze:"C++ Maze Game",i_360:"360 Rescue Box",s_pwd:"Extraction code:",m_cloud:"Lanzou ↗",h_tips:"Notes",t1:"All files are hosted on Lanzou Cloud; click an entry to open it.",t2:"For files with an extraction code, the code is shown below the entry — copy it and paste it on the Lanzou page.",t3:"If a link is broken, please let us know by email and we'll re-upload it soon.",original_site:"Original Site"}
 };
 (function(){
 var KEY="hdcfl-lang",DEF="zh-CN",sup=Object.keys(I18N);
