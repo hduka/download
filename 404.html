@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="hdcfl studio —— 页面未找到（404）。">
+<meta name="theme-color" content="#ebebeb">
+<link rel="icon" type="image/webp" href="https://cdn.luogu.com.cn/upload/image_hosting/k87dqudm.webp">
+<link rel="apple-touch-icon" href="https://cdn.luogu.com.cn/upload/image_hosting/k87dqudm.webp">
+<title>hdcfl studio | 404</title>
+
+<style>
+:root{
+  --bg:#ebebeb;
+  --surface:#ffffff;
+  --fg:#000000;
+  --fg2:#333333;
+  --muted:#666666;
+  --line:#cccccc;
+  --line2:#e5e5e5;
+  --link:#0000cc;
+  --link-h:#cc0000;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;display:flex;flex-direction:column;min-height:100vh;
+  font:14px/1.55 Arial,Helvetica,"Microsoft YaHei","宋体",sans-serif;
+  color:var(--fg);background:var(--bg);
+}
+/* 顶栏 */
+.header{
+  display:flex;align-items:center;gap:.6rem;
+  padding:.6rem 1.25rem;
+  background:var(--surface);
+  border-bottom:1px solid var(--line);
+}
+.brand-logo{flex:none;width:28px;height:28px;object-fit:contain}
+.brand-name{
+  font-size:16px;font-weight:bold;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+/* 内容区 */
+.panel{
+  flex:1;
+  width:100%;max-width:900px;margin:0 auto;
+  padding:2.5rem 1.25rem;
+  background:var(--surface);
+  border-left:1px solid var(--line2);
+  border-right:1px solid var(--line2);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.row{display:flex;gap:1.5rem;align-items:flex-start}
+.error-img{flex:none;width:130px;max-width:38%;height:auto;display:block}
+.text{flex:1;min-width:0}
+.error-code{
+  margin:0 0 .35rem;
+  font-size:28px;font-weight:bold;color:#000;line-height:1.2;
+}
+.error-title{
+  margin:0 0 .5rem;
+  font-size:16px;font-weight:bold;color:#000;
+}
+.error-desc{margin:0 0 .35rem;font-size:13px;color:var(--fg2)}
+.error-path{
+  margin:0;
+  font-family:"Courier New",Consolas,monospace;
+  font-size:12px;color:var(--muted);word-break:break-all;
+}
+hr.sep{
+  height:0;margin:1.5rem 0 1.25rem;border:0;
+  border-top:1px solid var(--line);
+}
+.actions{display:flex;justify-content:flex-end}
+.btn{
+  display:inline-block;
+  padding:.35rem 1.1rem;
+  font:inherit;font-size:13px;
+  color:#000;background:#f0f0f0;
+  border:1px solid #999;border-radius:0;
+  text-decoration:none;cursor:pointer;
+}
+.btn:hover{background:#e0e0e0}
+.btn:focus-visible{outline:1px dotted #000;outline-offset:2px}
+/* 链接 */
+a{color:var(--link)}
+a:hover{color:var(--link-h)}
+/* 底栏 */
+footer{
+  padding:.7rem 1.25rem;
+  font-size:12px;color:var(--muted);text-align:center;
+  background:var(--surface);
+  border-top:1px solid var(--line);
+}
+@media(max-width:960px){
+  .panel{border-left:0;border-right:0}
+}
+@media(max-width:460px){
+  .row{flex-direction:column;align-items:center;text-align:center}
+  .error-img{width:96px;max-width:60%}
+  .actions{justify-content:stretch}
+  .btn{flex:1;text-align:center}
+  .brand-name{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <img class="brand-logo" src="https://cdn.luogu.com.cn/upload/image_hosting/k87dqudm.webp" alt="">
+  <span class="brand-name">hdcfl studio</span>
+</header>
+
+<main class="panel">
+  <div class="row">
+    <img class="error-img"
+         src="https://cdn.luogu.com.cn/upload/image_hosting/in6hkrrs.webp"
+         alt="404 页面插图">
+    <div class="text">
+      <p class="error-code">404</p>
+      <h1 class="error-title">NOT FOUND</h1>
+      <p class="error-desc">您查找的网页可能已被移动或删除。</p>
+      <p class="error-path">无法找到请求的资源，请检查网址是否正确。</p>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <div class="actions">
+    <a class="btn" href="https://hduka.github.io/download/">返回下载页</a>
+  </div>
+</main>
+
+<footer>
+  hdcfl studio · hdcfl c++ · © 2026 · v1.2.4
+</footer>
+
+</body>
+</html>
